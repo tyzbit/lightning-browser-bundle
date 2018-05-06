@@ -37,10 +37,10 @@ extension will pop up with an easy-to-use button to pay the invoice.
 
 # Backup
 
-Your lnd folder, by default, is in ~/.lnd-bb and is owned by root.
-As long as you're not running as root(DON'T), this actually improves security from
-the desktop perspective as even you can't read the wallet files. This makes backing
-it up more difficult, though.
+Your lnd folder, by default, is in `~/.lnd-bb` and is owned by root.
+As long as you're not running as root(YOU SHOULDN'T BE), this actually improves 
+security from the desktop perspective as even you can't read the wallet files. 
+This makes backing it up more difficult, though.
 
 I suggest backing the folder up with overwriting backups since you always want 
 the latest backup to restore from to help guard against breaching your channels.
