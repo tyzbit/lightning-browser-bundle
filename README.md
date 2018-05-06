@@ -3,14 +3,15 @@ Browser bundle with an included and integrated Lightning daemon.
 
 # Prerequisites
 
-Linux (Debian-like) System (PRs for support for more systems welcomed!)
-[Docker](https://store.docker.com/search?type=edition&offering=community)
-Chromium (will be installed via `apt` if it isn't already)
+- Linux (Debian-like) System (PRs for support for more systems welcomed!)
+
+- [Docker](https://store.docker.com/search?type=edition&offering=community)
+
+- Chromium (will be installed via `apt` if it isn't already)
 
 # Install
 
-Run `./install.sh` and follow the directions.
-(currently assumes debian-like linux system)
+Run `./install.sh` and follow the directions. (currently assumes debian-like Linux system)
 
 Write down and save the wallet seed somewhere safe.
 
