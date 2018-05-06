@@ -13,7 +13,7 @@ Browser bundle with an included and integrated Lightning daemon.
 
 Run `./install.sh` and follow the directions. (currently assumes debian-like Linux system)
 
-Write down and save the wallet seed somewhere safe.
+Physically write down and save the wallet seed somewhere safe.
 
 # Prepare
 
