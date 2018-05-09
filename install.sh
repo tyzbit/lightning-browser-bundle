@@ -12,12 +12,12 @@ error() {
   echo -e "\e[31m$1\e[0m"
 }
 
-if [[ $(hash chromium-browser) -gt 0 ]]; then
+if [[ ! $(command -v chromium-browser) ]]; then
   info "Installing Chromium..."
   sudo apt install chromium-browser
 fi
 
-if [[ $(hash docker) -gt 0 ]]; then
+if [[ ! $(command -v docker) ]]; then
   error "Docker not installed, please install Docker"
   error "https://store.docker.com/search?type=edition&offering=community"
   exit 1
@@ -79,4 +79,3 @@ else
   # sleeping 5 to give the macaroons time to generate
   sleep 5; docker start $lncli_web
 fi
-
