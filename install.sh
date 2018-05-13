@@ -23,6 +23,12 @@ if [[ ! $(command -v docker) ]]; then
   exit 1
 fi
 
+if [[ $(docker ps | echo $?) -gt 0 ]]; then
+  error "Your user does not have permission to run Docker commands"
+  error "Add yourself to the 'docker' group and log out and back in"
+  exit 1
+fi
+
 if [[ $(docker network ls -qf "name=$network" | wc -l) -gt 0 ]]; then
   error "Docker network exists, skipping"
 else
